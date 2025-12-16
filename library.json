@@ -1,0 +1,23 @@
+{
+  "name": "LSD",
+  "version": "1.0.0",
+  "description": "LS driver for lighting projects",
+  "keywords": "LED, ESP32, pain",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/CubeLab-Concept/LSD.git"
+  },
+  "authors":
+  [
+    {
+      "name": "CubeLab Concept",
+      "email": "cubelab.concept@gmail.com",
+      "maintainer": true
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "frameworks": "arduino",
+  "platforms": "*"
+}
