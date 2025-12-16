@@ -40,7 +40,7 @@ void LSD::set_color(uint32_t hex_color) {
     uint8_t red   = (hex_color >> 16) & 0xFF;
     uint8_t green = (hex_color >> 8)  & 0xFF;
     uint8_t blue  =  hex_color        & 0xFF;
-    setColor(red, green, blue);
+    set_color(red, green, blue);
 }
 
 
