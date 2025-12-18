@@ -3,7 +3,7 @@
 
 
 LSD::LSD(uint8_t data_pin, uint8_t clock_pin, uint8_t nb_module):
-_data_pin(data_pin), _clock_pin(clock_pin),
+_data_pin(data_pin), _clock_pin(clock_pin), _nb_modules(nb_module)
 {    /* LSD class constructor*/
 
     
@@ -102,7 +102,7 @@ void LSD::set_color(uint8_t red, uint8_t green, uint8_t blue){
 void LSD::set_color(uint32_t hex_color, bool doShow){
     /*Apply hex colors to all modules, show if it is set*/
     for(int i = 0; i< this->_nb_modules; i++){
-        set_color(hex_color i, false);
+        set_color(hex_color, i, false);
     }
 
     // Send color data to IC?

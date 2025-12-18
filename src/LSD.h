@@ -33,7 +33,7 @@ class LSD {
         // private methods
         void tick();
         void set_clock_speed(uint16_t clock_speed);
-        uint32_t format_color(uint32_t col_data);
+        uint32_t format_color(uint8_t red, uint8_t green, uint8_t blue);
         void send_colors();
         void send_frame(uint32_t frame);
         void empty_frame();
