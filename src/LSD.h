@@ -20,6 +20,8 @@ class LSD {
         void set_color(uint8_t red, uint8_t green, uint8_t blue);
         void set_color(uint32_t hex, bool doShow);
         void set_color(uint32_t hex);
+        
+        void send_colors();
 
     private:
         // Data and clock pins
@@ -34,7 +36,6 @@ class LSD {
         void tick();
         void set_clock_speed(uint16_t clock_speed);
         uint32_t format_color(uint8_t red, uint8_t green, uint8_t blue);
-        void send_colors();
         void send_frame(uint32_t frame);
         void empty_frame();
 };
